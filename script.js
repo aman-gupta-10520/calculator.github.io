@@ -1,84 +1,171 @@
-
+var dislimit = 0;
 
 var one="";
+
+function etxt1(){
+  document.getElementById("1").style.fontSize = "50px";
+  document.getElementById("1").innerHTML = one;
+}
+
 function onef(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=1;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 function twof(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=2;
   document.getElementById("1").innerHTML=one;
 }
 function threef(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=3;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 function fourf(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=4;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 
 function fivef(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=5;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 function sixf(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=6;
   document.getElementById("1").innerHTML=one;
 
 }
 function sevenf(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=7;
   document.getElementById("1").innerHTML=one;
 
 }
 function eigthf(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=8;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 function ninef(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one+=9;
   document.getElementById("1").innerHTML=one;
 }
 function decimalf(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one=one+"."
   document.getElementById("1").innerHTML=one;
-  
+
 }
 function zerof(){
+  if (dislimit == 11){
+    document.getElementById("1").style.fontSize = "40px";
+    document.getElementById("1").innerHTML = "Choose Operator";
+    window.setTimeout(etxt1, 500);
+    return;
+  }
+  dislimit += 1;
   one=one+0;
   document.getElementById("1").innerHTML=one;
-  
+
 }
 
 var op;
 var one1
 function multiplyf(){
+  dislimit = 0;
   op="*";
   one1=one;
   one=""
   document.getElementById("1").innerHTML=op;
-  
+
 }
 function dividef(){
+  dislimit = 0;
   op="/";
   one1=one;
   one=""
   document.getElementById("1").innerHTML=op;
-  
+
 }
 function plusf(){
+  dislimit = 0;
   op="+"
   one1=one;
   one="";
   document.getElementById("1").innerHTML=op;
 }
 function minusf(){
+  dislimit = 0;
   op="-";
   one1=one;
   one=""
@@ -86,12 +173,13 @@ function minusf(){
 }
 
 function eqf(){
+  dislimit = 0;
   var on1=Number(one1);
   on=Number(one);
   if(op==="*"){
     document.getElementById("1").innerHTML=on1*on
     one=(on1*on).toString();
-  
+
   }
   if(op==="/"){
     document.getElementById("1").innerHTML=on1/on
@@ -105,14 +193,16 @@ function eqf(){
     document.getElementById("1").innerHTML=on1-on
     one=(on1-on).toString();
   }
-  
+
 }
 function cl(){
+  dislimit = 0;
   one1="";
   one="";
   document.getElementById("1").innerHTML=0;
 }
 function removef(){
-  one = one.slice(0, -1); 
+  dislimit -= 1;
+  one = one.slice(0, -1);
   document.getElementById("1").innerHTML=one;
 }
