@@ -6,8 +6,10 @@ button{
   height:50px;
   margin:0 ;
   font-size:25px;
-  border-radius:5px;
-  background-color:#f5dff2;
+  border:1px solid black;
+  border-radius:8px;
+  background-color:#dfeb94;
+  box-shadow:5px 0;
   
 }
 .numbers{
@@ -46,4 +48,11 @@ button{
 button:hover{
   opacity:0.85;
 
+}
+.operator button{
+  background-color:#c5cfde;
+}
+
+#equal{
+  background-color:#d9bac2;
 }
