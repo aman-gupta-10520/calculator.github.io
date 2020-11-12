@@ -1,44 +1,44 @@
 <!DOCTYPE HTML>
 <html>
 <head>
- <title>Calcculator</title>
+ <title>Calculator</title>
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="wrapper">
-  <div id="show"><span id="1">0</span></div>
+  <div id="show"><h8 id="1">0</h8></div>
     <div class="operator">
      <button id="plus" onclick=plusf()>+</button>
-     <button id="multiply" onclick=multiplyf()>*</button>
+     <button id="minus" onclick=minusf()><span>-</span></button>
+     <button id="multiply" onclick=multiplyf()>x</button>
      <button id="divide" onclick=dividef()>/</button>
-     <button id="minus" onclick=minusf()>-</button>
-    <div>
+    </div>
   <div class="numbers">
-  <div class="number">
-  <button class="se" id="one" onclick=onef()>1</button>
-  <button id="two" onclick=twof()>2</button>
-  <button id="three" onclick=threef()>3</button>
-  </div>
-  <div class="number">
-  <button id="four" onclick=fourf()>4</button>
-  <button id="five" onclick=fivef()>5</button>
-  <button id="six" onclick=sixf()>6</button>
-  </div>
-  <div class="number">
-  <button id="seven" onclick=sevenf()>7</button>
-  <button id="eigth" onclick=eigthf()>8</button>
-  <button id="nine" onclick=ninef()>9</button>
-  </div>
-  <div class="number">
-  <button id="zeo" onclick=zerof()>0</button>
-  <button id="decimal" onclick=decimalf()>.</button>
-  <button id="clear" onclick=cl()>CE</button>
-  </div>
+   <div class="number">
+    <button id="seven" onclick=sevenf()>7</button>
+    <button id="eigth" onclick=eigthf()>8</button>
+    <button id="nine" onclick=ninef()>9</button>
+   </div>
+
+   <div class="number">
+   <button id="four" onclick=fourf()>4</button>
+   <button id="five" onclick=fivef()>5</button>
+   <button id="six" onclick=sixf()>6</button>
+   </div>
+   <div class="number">
+   <button class="se" id="one" onclick=onef()>1</button>
+   <button id="two" onclick=twof()>2</button>
+   <button id="three" onclick=threef()>3</button>
+   </div>
+   <div class="number">
+   <button id="zeo" onclick=zerof()>0</button>
+   <button id="decimal" onclick=decimalf()>.</button>
+   <button id="clear" onclick=cl()>AC</button>
+   </div>
   </div>
   <div class="extra">
-  <button id="remove" onclick=removef()><></button>
+  <button id="remove" onclick=removef()>CE</button>
   <button id="equal" onclick=eqf()>=</button>
-  
   </div>
   </div>
   <script src="script.js"></script>
