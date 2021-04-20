@@ -2,31 +2,36 @@ body{
   background:cyan;
 }
 button{
-  width:70px;
-  height:50px;
+  width:12vw;
+  height:6.1vw;
   margin:0 ;
-  font-size:25px;
+  font-size:3.5vw;
   border:1px solid black;
-  border-radius:8px;
+  border-radius:12px;
   background-color:#dfeb94;
-  box-shadow:5px 0;
-  
+  box-shadow:5px 0 black;
+  font-weight: bold;
+
 }
 .numbers{
   float:left;
   margin-right:4px;
 }
 #equal{
-  height:150px;
+  height:18.14vw;
 }
 .wrapper{
   background:#693917;
-  width:292px;
+  width:49.5vw;
+  height:43vw;
   border-radius:30px;
-  padding:20px;
+  padding-top:0px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-left:20px;
   margin:auto;
   box-shadow:10px 10px black;
-   
+
 }
 .number buttton{
   margin:0;
@@ -35,12 +40,12 @@ button{
 #show{
   background-color:#403e3b;
   color:white;
-  height:70px;
-  font-size:50px;
+  height:10vw;
+  font-size:7.3vw;
   padding-top:10px;
   border:5px solid black;
   border-radius:10px;
-  width:282px;
+  width:48.5vw;
 }
 #one{
   margin-right:0;
@@ -55,4 +60,47 @@ button:hover{
 
 #equal{
   background-color:#d9bac2;
+}
+/*binary css*/
+#res{
+    background-color:#403e3b;
+    border-radius:10px;
+    border:5px solid black;
+    height:7vw;
+    font-size:5vw;
+    width:48.5vw;
+}
+#btn0,#btn1{
+    background:#d9bac2;
+    color:black;
+
+}
+#btnClr,#btnEql{
+    background:#dfeb94;
+    color:black;
+
+}
+#btnSum,#btnSub,#btnMul,#btnDiv{
+    background:c5cfde;
+    color:black;
+}
+.btns button{
+    width:25%;
+    height:36px;
+    font-size:3vw;
+    float:left;
+}
+.binary{
+  display:none;
+  width:50vw;
+  height:21.5vw;
+  margin:auto;
+  margin-top: 7vw;
+  background:#693917;
+  box-shadow:10px 10px black;
+  padding-top:0px;
+  padding-right:20px;
+  padding-bottom:20px;
+  padding-left:20px;
+  border-radius:30px;
 }
