@@ -168,8 +168,40 @@ function minusf(){
   one=""
   document.getElementById("1").innerHTML=op;
 }
+function powf(){
+  dislimit=0;
+  op="^";
+  one1=one;
+  one=""
+  document.getElementById("1").innerHTML=op;
+}
+function rootf(){
+  one+="sqrt";
+  document.getElementById("1").innerHTML=one;
 
+}
+function modf(){
+  dislimit=0;
+  op="%";
+  one1=one;
+  one=""
+  document.getElementById("1").innerHTML="mod";
+}
+function factf(){
+  op="!";
+  one1=one;
+  document.getElementById("1").innerHTML+="!"
+}
 function eqf(){
+  if(one[0]==="s"){
+    var z=one.slice(4,13);
+    on1=Number(z);
+    var p=(on1**0.5).toFixed(4)
+
+    document.getElementById("1").innerHTML=p;
+    one=p.toString();
+    return
+  }
   dislimit=0;
   var on1=Number(one1);
   on=Number(one);
@@ -202,7 +234,7 @@ function eqf(){
     one=(on1+on).toString();
   }
   if(op==="-"){
-    if(((on1*on).toString()).length>12){
+    if(((on1-on).toString()).length>12){
       document.getElementById("1").style.fontSize="7.3vw";
       document.getElementById("1").innerHTML="max-limit";
       window.setTimeout(text,500);
@@ -211,8 +243,36 @@ function eqf(){
     document.getElementById("1").innerHTML=on1-on
     one=(on1-on).toString();
   }
-
+  if(op==="^"){
+    if(((on1**on).toString()).length>12){
+      document.getElementById("1").style.fontSize="7.3vw";
+      document.getElementById("1").innerHTML="max-limit";
+      window.setTimeout(text,500);
+      return
+    }
+    document.getElementById("1").innerHTML=(on1**on);
+    one=(on1**on).toString();
+  }
+  if(op==="%"){
+    document.getElementById("1").innerHTML=(on1%on);
+    one=(on1%on).toString();
+  }
+  if(op==="!"){
+    var fac=1;
+    for(var i=1;i<=on1;i++){
+      fac=fac*i;
+    }
+    if(((fac).toString()).length>12){
+      document.getElementById("1").style.fontSize="7.3vw";
+      document.getElementById("1").innerHTML="max-limit";
+      window.setTimeout(text,500);
+      return
+    }
+    document.getElementById("1").innerHTML=fac;
+    one=(fac).toString();
+  }
 }
+
 function cl(){
   dislimit=0;
   one1="";
