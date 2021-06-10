@@ -3,16 +3,23 @@
 <head>
  <title>Calculator</title>
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
 </head>
 <body>
   <div class="wrapper" id="wr">
-    <button style="width:80px;height:30px;font-size:20px;margin-left:20vw;" onclick="chng()">Binary</button>
+    <button style="width:7vw;height:2vw;font-size:1.5vw;margin-left:20vw;" onclick="chng()">Binary</button>
   <div id="show"><h8 id="1">0</h8></div>
+  <div class="bt">
     <div class="operator">
-     <button id="plus" onclick=plusf()>+</button>
-     <button id="minus" onclick=minusf()><span>-</span></button>
-     <button id="multiply" onclick=multiplyf()>x</button>
-     <button id="divide" onclick=dividef()>/</button>
+      <div><button id="pow" onclick=powf()>X<sup>n</sup></button>
+      <button id="minus" onclick=modf()><span class="m">mod</span></button>
+      <button id="multiply" onclick=factf()>n!</button>
+      <button id="divide" onclick=rootf()><i class="las la-square-root-alt"></i></button></div>
+     <div><button id="plus" onclick=plusf()><i class="las la-plus"></i></button>
+     <button id="minus" onclick=minusf()><span><i class="las la-minus"></i></span></button>
+     <button id="multiply" onclick=multiplyf()><i class="las la-times"></i></button>
+     <button id="divide" onclick=dividef()><i class="las la-divide"></i></button></div>
     </div>
   <div class="numbers">
    <div class="number">
@@ -38,22 +45,22 @@
    </div>
   </div>
   <div class="extra">
-  <button id="remove" onclick=removef()>CE</button>
-  <button id="equal" onclick=eqf()>=</button>
-  </div>
+  <button id="remove" onclick=removef()><i class="las la-backspace"></i></button>
+  <button id="equal" onclick=eqf()><i class="las la-equals"></i></button>
+</div></div>
   </div>
   <div class="binary" id="binary">
-  <button onclick="deci()" style="width:90px;height:30px;font-size:20px;margin-left:20vw;">Decimal</button>
+  <button onclick="deci()" style="width:7.5vw;height:2vw;font-size:1.5vw;margin-left:20vw;">Decimal</button>
    <div id="res"></div>
    <div id="btns">
    <button id="btn0" onclick="my('0')">0</button>
    <button id="btn1" onclick="my('1')">1</button>
-   <button id="btnClr" onclick="clea()">CE</button>
-   <button id="btnEql" onclick="equal()">=</button>
-   <button id="btnSum" onclick="add()">+</button>
-   <button id="btnSub" onclick="sub()">-</button>
-   <button id="btnMul" onclick="mul()">X</button>
-   <button id="btnDiv" onclick="div()">/</button>
+   <button id="btnClr" onclick="clea()">AC</button>
+   <button id="btnEql" onclick="equal()"><i class="las la-equals"></i></button>
+   <button id="btnSum" onclick="add()"><i class="las la-plus"></i></button>
+   <button id="btnSub" onclick="sub()"><i class="las la-minus"></i></button>
+   <button id="btnMul" onclick="mul()"><i class="las la-times"></i></button>
+   <button id="btnDiv" onclick="div()"><i class="las la-divide"></i></button>
 
        </div>
      </div>
